@@ -60,7 +60,7 @@ class filter_hvpinsert extends moodle_text_filter {
                 if($record) {
                     //insert iframe resizer library (via AMD)
                     $id = 'filter_hvp_'.$HVP_COUNT;
-                    $url = new moodle_url('/mod/hvp/view.php', array('id' => $record->id, 'embedded' => 1));
+                    $url = new moodle_url('/filter/hvpinsert/view.php', array('id' => $record->id, 'embedded' => 1));
                     $content = '<iframe class="filter_hvp" id="'.$id.'" src="'.$url.'" style="width:1px;min-width:100%;border:none;" frameborder="0" scrolling="no"></iframe>';
                     $content .= "<script> iFrameResize({}, '#".$id."') </script>";
                     $HVP_COUNT += 1;
