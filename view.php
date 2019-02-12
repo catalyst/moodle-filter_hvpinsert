@@ -21,7 +21,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 require_once("../../config.php");
-require_once($CFG->dataroot."/mod/hvp/locallib.php");
+require_once($CFG->dirroot."/mod/hvp/locallib.php");
 
 global $PAGE, $DB, $CFG, $OUTPUT;
 
